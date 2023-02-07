@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="1011.0" prefWidth="1513.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.encoreDecore.controller.admin.PackageFormController">
+   <children>
+      <AnchorPane fx:id="subPane" prefHeight="1011.0" prefWidth="1513.0">
+         <children>
+            <Label layoutX="563.0" layoutY="239.0" prefHeight="62.0" prefWidth="423.0" text="Service Details">
+               <font>
+                  <Font name="System Bold Italic" size="42.0" />
+               </font>
+            </Label>
+            <Line endX="795.0" endY="-1.52587890625E-5" layoutX="666.0" layoutY="224.0" startX="-636.0" startY="-1.52587890625E-5" />
+            <Label layoutX="65.0" layoutY="239.0" prefHeight="49.0" prefWidth="272.0" text="Services">
+               <font>
+                  <Font name="System Bold Italic" size="42.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="1335.0" layoutY="668.0" onAction="#btnDetailRemoveOnAction" prefHeight="51.0" prefWidth="140.0" style="-fx-background-color: #f44336;" text="REMOVE">
+               <font>
+                  <Font name="System Bold Italic" size="25.0" />
+               </font></JFXButton>
+            <JFXButton layoutX="1335.0" layoutY="729.0" onAction="#btnDetailUpdateOnAction" prefHeight="54.0" prefWidth="140.0" style="-fx-background-color: #fdd835;" text="UPDATE">
+               <font>
+                  <Font name="System Bold Italic" size="25.0" />
+               </font>
+            </JFXButton>
+            <TableView fx:id="tblService" layoutX="97.0" layoutY="311.0" onMouseClicked="#selectServiceRow" prefHeight="481.0" prefWidth="291.0" stylesheets="@../../css/style.css">
+              <columns>
+                <TableColumn fx:id="colService" prefWidth="293.9999694824219" text="Service Name" />
+              </columns>
+            </TableView>
+            <JFXButton layoutX="409.0" layoutY="659.0" onAction="#btnServiceRemoveOnAction" prefHeight="54.0" prefWidth="140.0" style="-fx-background-color: #f44336;" text="REMOVE" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="407.0" layoutY="855.0" onAction="#btnServiceAddOnAction" prefHeight="34.0" prefWidth="139.0" style="-fx-background-color: #00c853;" text="ADD" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="25.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="408.0" layoutY="734.0" onAction="#btnServiceUpdateOnAction" prefHeight="47.0" prefWidth="140.0" style="-fx-background-color: #fdd835;" text="UPDATE" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </JFXButton>
+            <JFXTextField fx:id="txtServiceName" layoutX="116.0" layoutY="851.0" prefHeight="46.0" prefWidth="272.0" promptText="Service Name">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </JFXTextField>
+            <TableView fx:id="tbleServiceContains" layoutX="617.0" layoutY="311.0" onMouseClicked="#selectServiceContainRow" prefHeight="481.0" prefWidth="705.0" stylesheets="@../../css/style.css">
+               <columns>
+                  <TableColumn fx:id="colName" prefWidth="235.0" text="Name" />
+                  <TableColumn fx:id="colBudget" prefWidth="157.0" text="Budget(Rs)" />
+                  <TableColumn fx:id="colSemi" prefWidth="158.0" text="Semi-Luxury(Rs)" />
+                  <TableColumn fx:id="colLuxury" prefWidth="154.0" text="Luxury(Rs)" />
+               </columns>
+            </TableView>
+            <JFXTextField fx:id="txtDetailName" layoutX="828.0" layoutY="837.0" prefHeight="30.0" prefWidth="223.0" promptText="Name">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtbudget" layoutX="1094.0" layoutY="805.0" prefHeight="30.0" prefWidth="223.0" promptText="Budget Price">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtSemi" layoutX="1094.0" layoutY="868.0" prefHeight="30.0" prefWidth="223.0" promptText="Semi -Luxury Price">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtLuxury" layoutX="1094.0" layoutY="928.0" prefHeight="30.0" prefWidth="223.0" promptText="Luxury Price">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton layoutX="1349.0" layoutY="846.0" onAction="#btnDetailAddOnAction" prefHeight="54.0" prefWidth="148.0" style="-fx-background-color: #00c853;" text="ADD">
+               <font>
+                  <Font name="System Bold Italic" size="25.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="38.0" layoutY="35.0" prefHeight="80.0" prefWidth="711.0" text="Package Customization" textFill="#4db6ac">
+               <font>
+                  <Font name="System Bold Italic" size="54.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="83.0" layoutY="146.0" prefHeight="49.0" prefWidth="272.0" text="Package *">
+         <font>
+            <Font name="System Bold Italic" size="42.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbPackage" layoutX="317.0" layoutY="154.0" onAction="#cmbPackageOnAction" prefHeight="46.0" prefWidth="348.0" promptText="Wedding Planning" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="1010.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.encoreDecore.controller.recep.placeOrder.PlaceOrderFormController">
+   <children>
+      <Label layoutX="78.0" layoutY="52.0" prefHeight="132.0" prefWidth="464.0" text="Place Order" textFill="#4db6ac">
+         <font>
+            <Font name="Arial Narrow Bold" size="83.0" />
+         </font>
+      </Label>
+      <Label layoutX="85.0" layoutY="209.0" prefHeight="49.0" prefWidth="272.0" text="Package ">
+         <font>
+            <Font name="System Bold" size="42.0" />
+         </font>
+      </Label>
+      <JFXComboBox layoutX="319.0" layoutY="217.0" prefHeight="46.0" prefWidth="348.0" promptText="Wedding Planning" />
+      <Line endX="1642.0" layoutX="184.0" layoutY="309.0" startX="-100.0" />
+      <Label layoutX="1358.0" layoutY="94.0" text="Order Id -">
+         <font>
+            <Font name="Arial Narrow Bold" size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="1359.0" layoutY="145.0" text="Customer Id -">
+         <font>
+            <Font name="Arial Narrow Bold" size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="1359.0" layoutY="193.0" text="Customer Name -">
+         <font>
+            <Font name="Arial Narrow Bold" size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="1361.0" layoutY="236.0" prefHeight="38.0" prefWidth="225.0" text="Required Date -">
+         <font>
+            <Font name="Arial Narrow Bold" size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="69.0" layoutY="352.0" prefHeight="49.0" prefWidth="272.0" text="Services">
+         <font>
+            <Font name="System Bold" size="42.0" />
+         </font>
+      </Label>
+      <Label layoutX="933.0" layoutY="328.0" prefHeight="62.0" prefWidth="315.0" text="Selected Items">
+         <font>
+            <Font name="System Bold" size="42.0" />
+         </font>
+      </Label>
+      <Label layoutX="982.0" layoutY="885.0" prefHeight="62.0" prefWidth="272.0" text="Total             -">
+         <font>
+            <Font name="System Bold" size="42.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="1599.0" layoutY="900.0" onAction="#btnMakePaymentOnAction" prefHeight="57.0" prefWidth="258.0" style="-fx-background-color: #00c853;" text="MAKE PAYMENT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="104.0" layoutY="912.0" onAction="#btnbackOnAction" prefHeight="57.0" prefWidth="169.0" style="-fx-background-color: #81c784;" text="BACK" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="tbleService" layoutX="85.0" layoutY="440.0" onMouseClicked="#selectCellOnAction" prefHeight="436.0" prefWidth="747.0">
+        <columns>
+          <TableColumn fx:id="colServiceName" prefWidth="291.0" text="Service_Name" />
+          <TableColumn fx:id="colBudget" prefWidth="155.0" text="Budget(Rs)" />
+            <TableColumn fx:id="colSemi" prefWidth="139.0" text="Semiluxuy(Rs)" />
+            <TableColumn fx:id="colLuxury" prefWidth="161.0" text="Luxury(Rs)" />
+        </columns>
+         <styleClass>
+            <String fx:value="significantDataCell" />
+            <String fx:value="tissueCell" />
+         </styleClass>
+      </TableView>
+      <TableView fx:id="tbleSelectedItems" layoutX="895.0" layoutY="403.0" onMouseClicked="#selectItemOnClick" prefHeight="410.0" prefWidth="832.0">
+         <columns>
+            <TableColumn fx:id="colName" prefWidth="356.0" text="Name" />
+            <TableColumn fx:id="colType" prefWidth="204.0" text="Type" />
+            <TableColumn fx:id="colPrice" prefWidth="271.0" text="Price(Rs)" />
+         </columns>
+      </TableView>
+      <Label fx:id="lblOrderId" layoutX="1500.0" layoutY="94.0" prefHeight="38.0" prefWidth="272.0" text=" ">
+         <font>
+            <Font name="Arial Narrow Bold" size="33.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCustomerId" layoutX="1548.0" layoutY="145.0" prefHeight="38.0" prefWidth="249.0" text=" ">
+         <font>
+            <Font name="Arial Narrow Bold" size="33.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCusName" layoutX="1604.0" layoutY="193.0" prefHeight="38.0" prefWidth="249.0" text=" ">
+         <font>
+            <Font name="Arial Narrow Bold" size="33.0" />
+         </font>
+      </Label>
+      <JFXDatePicker fx:id="requiredDate" layoutX="1586.0" layoutY="233.0" prefHeight="38.0" prefWidth="239.0" />
+      <Label fx:id="lblTotal" layoutX="1261.0" layoutY="885.0" prefHeight="50.0" prefWidth="187.0" text="0.0">
+         <font>
+            <Font name="System Bold" size="42.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbServices" layoutX="273.0" layoutY="360.0" onAction="#cmbServicesOnAction" prefHeight="46.0" prefWidth="348.0" />
+      <Label layoutX="982.0" layoutY="844.0" prefHeight="50.0" prefWidth="292.0" text="Service Charges -">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblServiceCharges" layoutX="1264.0" layoutY="844.0" prefHeight="50.0" prefWidth="292.0" text="0.0">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="1737.0" layoutY="770.0" onAction="#btnRemoveAllOnAction" prefHeight="46.0" prefWidth="158.0" style="-fx-background-color: #e53935; -fx-background-radius: 10px;" text="REMOVE ALL " textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="1738.0" layoutY="717.0" onAction="#btnRemoveOnAction" prefHeight="46.0" prefWidth="158.0" style="-fx-background-color: #f44336; -fx-background-radius: 10px;" text="REMOVE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="443.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.encoreDecore.controller.recep.MakePaymentFormController">
+   <children>
+      <Label layoutX="31.0" layoutY="23.0" prefHeight="81.0" prefWidth="314.0" text="Payment Details">
+         <font>
+            <Font name="System Bold" size="37.0" />
+         </font>
+      </Label>
+      <JFXRadioButton layoutX="126.0" layoutY="208.0" text="Cash ">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </JFXRadioButton>
+      <JFXRadioButton layoutX="249.0" layoutY="208.0" text="Card">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </JFXRadioButton>
+      <Label layoutX="428.0" layoutY="29.0" prefHeight="35.0" prefWidth="145.0" text="Invoice -">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="68.0" layoutY="97.0" prefHeight="35.0" prefWidth="165.0" text="Customer Id -">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="68.0" layoutY="122.0" prefHeight="35.0" prefWidth="208.0" text="Customer Name -">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="68.0" layoutY="150.0" prefHeight="35.0" prefWidth="208.0" text="Event Type -">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="56.0" layoutY="270.0" prefHeight="35.0" prefWidth="264.0" text="Amount has to Pay  -">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="56.0" layoutY="305.0" prefHeight="35.0" prefWidth="264.0" text="Amount Paying       -">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <JFXTextField layoutX="354.0" layoutY="305.0" prefHeight="31.0" prefWidth="208.0" />
+      <JFXButton buttonType="RAISED" layoutX="412.0" layoutY="366.0" onAction="#btnPayOnAction" prefHeight="42.0" prefWidth="165.0" style="-fx-background-color: #00c853;" text="PROCEED TO PAY" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

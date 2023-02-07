@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="1010.0" prefWidth="1920.0" style="-fx-background-color: ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.encoreDecore.controller.recep.CustomerFormController">
+   <children>
+      <ImageView fitHeight="845.0" fitWidth="1780.0" layoutX="61.0" layoutY="66.0" opacity="0.17">
+         <image>
+            <Image url="@../../assets/logo/companyLogo.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="67.0" layoutY="68.0" prefHeight="875.0" prefWidth="1780.0">
+         <children>
+            <Label layoutX="67.0" layoutY="62.0" prefHeight="109.0" prefWidth="767.0" text="Client Details" textFill="#4db6ac">
+               <font>
+                  <Font name="Arial Narrow Bold" size="81.0" />
+               </font>
+            </Label>
+            <Label layoutX="73.0" layoutY="213.0" prefHeight="54.0" prefWidth="352.0" text="First Name *">
+               <font>
+                  <Font name="System Bold Italic" size="28.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtFName" layoutX="60.0" layoutY="262.0" prefHeight="60.0" prefWidth="684.0">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </JFXTextField>
+            <Label layoutX="917.0" layoutY="210.0" prefHeight="54.0" prefWidth="352.0" text="Last Name *">
+               <font>
+                  <Font name="System Bold Italic" size="28.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtLName" layoutX="918.0" layoutY="262.0" prefHeight="60.0" prefWidth="760.0">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </JFXTextField>
+            <Label layoutX="70.0" layoutY="358.0" prefHeight="54.0" prefWidth="352.0" text="NIC *">
+               <font>
+                  <Font name="System Bold Italic" size="28.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtNic" layoutX="60.0" layoutY="409.0" onAction="#txtNicSearchOnAction" prefHeight="60.0" prefWidth="684.0">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </JFXTextField>
+            <Label layoutX="73.0" layoutY="490.0" prefHeight="54.0" prefWidth="352.0" text="Address *">
+               <font>
+                  <Font name="System Bold Italic" size="28.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtAddress" layoutX="62.0" layoutY="544.0" prefHeight="60.0" prefWidth="684.0">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </JFXTextField>
+            <Label layoutX="1374.0" layoutY="117.0" prefHeight="54.0" prefWidth="352.0" text="Client Id -">
+               <font>
+                  <Font name="System Bold Italic" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="74.0" layoutY="640.0" prefHeight="54.0" prefWidth="352.0" text="Contact *">
+               <font>
+                  <Font name="System Bold Italic" size="28.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtContact" layoutX="67.0" layoutY="692.0" prefHeight="60.0" prefWidth="684.0">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </JFXTextField>
+            <Label layoutX="916.0" layoutY="354.0" prefHeight="54.0" prefWidth="352.0" text="Email *">
+               <font>
+                  <Font name="System Bold Italic" size="28.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtEmail" layoutX="917.0" layoutY="406.0" prefHeight="60.0" prefWidth="766.0">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </JFXTextField>
+            <Spinner fx:id="spinner" editable="true" layoutX="1242.0" layoutY="579.0" prefHeight="59.0" prefWidth="264.0" />
+            <Label layoutX="1237.0" layoutY="512.0" prefHeight="54.0" prefWidth="117.0" text="Age *">
+               <font>
+                  <Font name="System Bold Italic" size="28.0" />
+               </font>
+            </Label>
+            <JFXRadioButton fx:id="rbMale" layoutX="942.0" layoutY="595.0" text="Male">
+               <font>
+                  <Font name="System Bold Italic" size="28.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="Gender" />
+               </toggleGroup>
+            </JFXRadioButton>
+            <JFXRadioButton fx:id="rvFemale" layoutX="941.0" layoutY="659.0" text="Female" toggleGroup="$Gender">
+               <font>
+                  <Font name="System Bold Italic" size="28.0" />
+               </font>
+            </JFXRadioButton>
+            <Label layoutX="916.0" layoutY="515.0" prefHeight="54.0" prefWidth="352.0" text="Gender *">
+               <font>
+                  <Font name="System Bold Italic" size="28.0" />
+               </font>
+            </Label>
+            <JFXButton buttonType="RAISED" layoutX="1527.0" layoutY="794.0" onAction="#btnContinueOnAction" style="-fx-background-color: #00c853;" text="CONTINUE" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="71.0" layoutY="794.0" onAction="#btnBackOnAction" text="BACK">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="1406.0" layoutY="794.0" onAction="#btnContinueOnAction" style="-fx-background-color: #fdd835;" text="CLEAR" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="lblId" layoutX="1536.0" layoutY="124.0" prefHeight="40.0" prefWidth="181.0" text=" ">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

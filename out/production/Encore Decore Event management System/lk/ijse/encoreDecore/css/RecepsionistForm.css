@@ -1,0 +1,14 @@
+.button_colour_selected:hover{
+    -fx-background-color: WHITE;
+    -fx-border-color: #26a69a;
+    -fx-border-width: 0px 0px 0px 6px;
+}
+.button_colour_selected:focused{
+    -fx-background-color: #26a69a;
+    -fx-border-color: #26a69a;
+    -fx-border-width: 0px 0px 0px 6px;
+}
+
+.button_colour_selected{
+    -fx-background-color: #b2dfdb;
+}

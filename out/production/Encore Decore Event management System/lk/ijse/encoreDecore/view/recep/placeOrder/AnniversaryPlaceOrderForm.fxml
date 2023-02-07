@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="1010.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.encoreDecore.controller.recep.placeOrder.AnniversaryPlaceOrderFormController">
+   <children>
+      <Label layoutX="78.0" layoutY="52.0" prefHeight="132.0" prefWidth="464.0" text="Place Order">
+         <font>
+            <Font name="Arial Narrow Bold Italic" size="83.0" />
+         </font>
+      </Label>
+      <Label layoutX="85.0" layoutY="209.0" prefHeight="49.0" prefWidth="272.0" text="Package *">
+         <font>
+            <Font name="System Bold Italic" size="42.0" />
+         </font>
+      </Label>
+      <JFXComboBox layoutX="319.0" layoutY="217.0" prefHeight="46.0" prefWidth="348.0" />
+      <Line endX="1689.3333740234375" layoutX="184.0" layoutY="309.0" startX="-100.0" />
+      <Label layoutX="1379.0" layoutY="94.0" text="Order Id -">
+         <font>
+            <Font name="Arial Narrow Bold Italic" size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="1380.0" layoutY="145.0" text="Customer Id -">
+         <font>
+            <Font name="Arial Narrow Bold Italic" size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="1380.0" layoutY="193.0" text="Customer Name -">
+         <font>
+            <Font name="Arial Narrow Bold Italic" size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="1382.0" layoutY="236.0" text="Date -">
+         <font>
+            <Font name="Arial Narrow Bold Italic" size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="91.0" layoutY="343.0" prefHeight="49.0" prefWidth="272.0" text="Services">
+         <font>
+            <Font name="System Bold Italic" size="42.0" />
+         </font>
+      </Label>
+      <JFXCheckBox layoutX="112.0" layoutY="405.0" prefHeight="44.0" prefWidth="152.0" text="Styling &amp; Decor">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+      </JFXCheckBox>
+      <Label layoutX="450.0" layoutY="404.0" prefHeight="46.0" prefWidth="159.0" text="(Rs  50,000.00)">
+         <font>
+            <Font name="Arial Narrow Bold Italic" size="25.0" />
+         </font>
+      </Label>
+      <JFXCheckBox layoutX="111.0" layoutY="450.0" prefHeight="44.0" prefWidth="152.0" text="Apparel Selecting">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+      </JFXCheckBox>
+      <Label layoutX="450.0" layoutY="449.0" prefHeight="46.0" prefWidth="159.0" text="(Rs  20,000.00)">
+         <font>
+            <Font name="Arial Narrow Bold Italic" size="25.0" />
+         </font>
+      </Label>
+      <JFXCheckBox layoutX="111.0" layoutY="494.0" prefHeight="44.0" prefWidth="152.0" text="Music Band &amp; DJ">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+      </JFXCheckBox>
+      <JFXCheckBox layoutX="111.0" layoutY="538.0" prefHeight="44.0" prefWidth="152.0" text="Dancing ">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+      </JFXCheckBox>
+      <JFXCheckBox layoutX="111.0" layoutY="582.0" prefHeight="44.0" prefWidth="152.0" text="Photography">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+      </JFXCheckBox>
+      <JFXCheckBox layoutX="111.0" layoutY="623.0" prefHeight="44.0" prefWidth="152.0" text="Invitation Card Designing ">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+      </JFXCheckBox>
+      <Label layoutX="450.0" layoutY="492.0" prefHeight="46.0" prefWidth="159.0" text="(Rs  40,000.00)">
+         <font>
+            <Font name="Arial Narrow Bold Italic" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="450.0" layoutY="536.0" prefHeight="46.0" prefWidth="159.0" text="(Rs  35,000.00)">
+         <font>
+            <Font name="Arial Narrow Bold Italic" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="450.0" layoutY="579.0" prefHeight="46.0" prefWidth="159.0" text="(Rs  90,000.00)">
+         <font>
+            <Font name="Arial Narrow Bold Italic" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="450.0" layoutY="622.0" prefHeight="46.0" prefWidth="159.0" text="(Rs  10,000.00)">
+         <font>
+            <Font name="Arial Narrow Bold Italic" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="771.0" layoutY="343.0" prefHeight="49.0" prefWidth="272.0" text="Rent Items">
+         <font>
+            <Font name="System Bold Italic" size="42.0" />
+         </font>
+      </Label>
+      <Label layoutX="221.0" layoutY="738.0" prefHeight="50.0" prefWidth="187.0" text="Sub Total -">
+         <font>
+            <Font name="System Bold Italic" size="34.0" />
+         </font>
+      </Label>
+      <JFXCheckBox layoutX="790.0" layoutY="405.0" prefHeight="44.0" prefWidth="152.0" text="Wedding Arches/ Backdrop">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+      </JFXCheckBox>
+      <JFXCheckBox layoutX="790.0" layoutY="448.0" prefHeight="44.0" prefWidth="152.0" text="Flower Decorations">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+      </JFXCheckBox>
+      <JFXCheckBox layoutX="790.0" layoutY="493.0" prefHeight="44.0" prefWidth="152.0" text="Car Rental">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+      </JFXCheckBox>
+      <JFXCheckBox layoutX="789.0" layoutY="538.0" prefHeight="44.0" prefWidth="152.0" text="Bridal Bouquet">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+      </JFXCheckBox>
+      <JFXCheckBox layoutX="111.0" layoutY="664.0" prefHeight="44.0" prefWidth="152.0" text="Catering">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+      </JFXCheckBox>
+      <Label layoutX="449.0" layoutY="662.0" prefHeight="46.0" prefWidth="159.0" text="(Rs  30,000.00)">
+         <font>
+            <Font name="Arial Narrow Bold Italic" size="25.0" />
+         </font>
+      </Label>
+      <JFXCheckBox layoutX="789.0" layoutY="586.0" prefHeight="44.0" prefWidth="152.0" text="Cake Stand">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+      </JFXCheckBox>
+      <Label layoutX="1411.0" layoutY="345.0" prefHeight="49.0" prefWidth="272.0" text="Extras">
+         <font>
+            <Font name="System Bold Italic" size="42.0" />
+         </font>
+      </Label>
+      <Label layoutX="1152.0" layoutY="404.0" prefHeight="46.0" prefWidth="159.0" text="(Rs  75,000.00)">
+         <font>
+            <Font name="Arial Narrow Bold Italic" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="1152.0" layoutY="447.0" prefHeight="46.0" prefWidth="159.0" text="(Rs  25,000.00)">
+         <font>
+            <Font name="Arial Narrow Bold Italic" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="1153.0" layoutY="489.0" prefHeight="46.0" prefWidth="159.0" text="(Rs  20,000.00)">
+         <font>
+            <Font name="Arial Narrow Bold Italic" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="1154.0" layoutY="536.0" prefHeight="46.0" prefWidth="159.0" text="(Rs  10,000.00)">
+         <font>
+            <Font name="Arial Narrow Bold Italic" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="1155.0" layoutY="580.0" prefHeight="46.0" prefWidth="159.0" text="(Rs    5,000.00)">
+         <font>
+            <Font name="Arial Narrow Bold Italic" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="903.0" layoutY="741.0" prefHeight="50.0" prefWidth="187.0" text="Sub Total -">
+         <font>
+            <Font name="System Bold Italic" size="34.0" />
+         </font>
+      </Label>
+      <JFXCheckBox checkedColor="#10109c" layoutX="1435.0" layoutY="404.0" prefHeight="44.0" prefWidth="152.0" text="Bar Service">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+      </JFXCheckBox>
+      <Label layoutX="1702.0" layoutY="403.0" prefHeight="46.0" prefWidth="159.0" text="(Rs  80,000.00)">
+         <font>
+            <Font name="Arial Narrow Bold Italic" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="1440.0" layoutY="494.0" text="Invitation Cards *">
+         <font>
+            <Font name="Arial Narrow Italic" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="1534.0" layoutY="523.0" prefHeight="46.0" prefWidth="159.0" text="(Rs    700.00)">
+         <font>
+            <Font name="Arial Narrow Bold Italic" size="25.0" />
+         </font>
+      </Label>
+      <Spinner layoutX="1718.0" layoutY="505.0" prefHeight="53.0" prefWidth="114.0" />
+      <Label layoutX="1441.0" layoutY="569.0" text="Attendant Gifts *">
+         <font>
+            <Font name="Arial Narrow Italic" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="1535.0" layoutY="598.0" prefHeight="46.0" prefWidth="159.0" text="(Rs    500.00)">
+         <font>
+            <Font name="Arial Narrow Bold Italic" size="25.0" />
+         </font>
+      </Label>
+      <Spinner layoutX="1719.0" layoutY="580.0" prefHeight="53.0" prefWidth="114.0" />
+      <JFXCheckBox checkedColor="#10109c" layoutX="1435.0" layoutY="443.0" prefHeight="44.0" prefWidth="152.0" text="Cake">
+         <font>
+            <Font name="System Bold Italic" size="23.0" />
+         </font>
+      </JFXCheckBox>
+      <Label layoutX="1702.0" layoutY="442.0" prefHeight="46.0" prefWidth="159.0" text="(Rs  15,000.00)">
+         <font>
+            <Font name="Arial Narrow Bold Italic" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="1473.0" layoutY="738.0" prefHeight="50.0" prefWidth="187.0" text="Sub Total -">
+         <font>
+            <Font name="System Bold Italic" size="34.0" />
+         </font>
+      </Label>
+      <Label layoutX="391.0" layoutY="828.0" prefHeight="132.0" prefWidth="243.0" text="Total - ">
+         <font>
+            <Font name="Arial Narrow Bold Italic" size="57.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="1599.0" layoutY="900.0" onAction="#btnMakePaymentOnAction" prefHeight="46.0" prefWidth="249.0" text="MAKE PAYMENT">
+         <font>
+            <Font name="System Bold Italic" size="27.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="1399.0" layoutY="901.0" onAction="#btnbackOnAction" prefHeight="57.0" prefWidth="169.0" text="BACK">
+         <font>
+            <Font name="System Bold Italic" size="27.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,26 @@
+.font_header{
+    -fx-font-family:"Kelly Slab ";
+}
+.login_button:hover{
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #061c59;
+}
+
+.login_button{
+    -fx-background-color: #061c59;
+
+}
+.foget{
+    -fx-text-fill:#061c59;
+}
+.foget:hover{
+    -fx-text-fill: #ffffff;
+}
+
+.corner{
+    border-radius: 25px;
+}
+
+.fogetButton{
+    -fx-background-color: transparent;
+}

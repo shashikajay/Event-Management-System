@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="516.0" prefWidth="652.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.encoreDecore.controller.recep.OrderDetailsFormController">
+   <children>
+      <Label layoutX="26.0" layoutY="25.0" prefHeight="65.0" prefWidth="300.0" text="Order Details">
+         <font>
+            <Font name="System Bold" size="44.0" />
+         </font>
+      </Label>
+      <Label layoutX="395.0" layoutY="76.0" prefHeight="45.0" prefWidth="123.0" text="Order Id -">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblOrderId" layoutX="518.0" layoutY="76.0" prefHeight="45.0" prefWidth="123.0" text=" ">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblOrderDetails" layoutX="26.0" layoutY="141.0" prefHeight="276.0" prefWidth="600.0" stylesheets="@../../css/style.css">
+        <columns>
+          <TableColumn fx:id="colName" prefWidth="227.0" text="Service Name" />
+          <TableColumn fx:id="colType" prefWidth="178.0" text="Type" />
+            <TableColumn fx:id="colPrice" prefWidth="194.0" text="Price" />
+        </columns>
+      </TableView>
+      <JFXButton layoutX="522.0" layoutY="435.0" onAction="#btnBackOnAction" prefHeight="45.0" prefWidth="97.0" style="-fx-background-color: #fdd835;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

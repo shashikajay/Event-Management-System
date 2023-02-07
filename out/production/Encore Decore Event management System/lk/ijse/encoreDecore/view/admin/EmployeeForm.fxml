@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="1011.0" prefWidth="1513.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.encoreDecore.controller.admin.EmployeeFormController">
+   <children>
+      <AnchorPane layoutX="1.0" layoutY="1.0" prefHeight="1011.0" prefWidth="1513.0">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="1325.0" layoutY="925.0" onAction="#btnAddOnAction" prefHeight="60.0" prefWidth="148.0" style="-fx-background-color: #00c853;" text="ADD" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="28.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="1162.0" layoutY="926.0" onAction="#btnUpdateOnAction" prefHeight="60.0" prefWidth="148.0" style="-fx-background-color: #fdd835;" text="UPDATE" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="28.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="939.0" layoutY="925.0" onAction="#btnRemoveOnAction" prefHeight="57.0" prefWidth="197.0" style="-fx-background-color: #f44336;" text="REMOVE" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="28.0" />
+               </font>
+            </JFXButton>
+            <JFXTextField fx:id="txtSearch" layoutX="209.0" layoutY="153.0" prefHeight="45.0" prefWidth="316.0" />
+            <Label layoutX="45.0" layoutY="145.0" prefHeight="60.0" prefWidth="216.0" text="Search ">
+               <font>
+                  <Font name="System Bold Italic" size="38.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tblEmployee" layoutX="45.0" layoutY="230.0" onMouseClicked="#selectRowOnMouseClick" prefHeight="670.0" prefWidth="1422.0" stylesheets="@../../css/style.css">
+              <columns>
+                <TableColumn fx:id="colEmployeeId" prefWidth="122.0" text="Employee Id" />
+                <TableColumn fx:id="colName" prefWidth="280.0" text="Full Name" />
+                  <TableColumn fx:id="colNic" prefWidth="152.0" text="NIC" />
+                  <TableColumn fx:id="colconatact" prefWidth="150.0" text="Contact" />
+                  <TableColumn fx:id="colEmail" prefWidth="180.0" text="Email" />
+                  <TableColumn fx:id="colRole" prefWidth="308.0" text="Role" />
+                  <TableColumn fx:id="colSalary" prefWidth="229.0" text="Salary" />
+              </columns>
+            </TableView>
+            <Label layoutX="45.0" layoutY="41.0" prefHeight="84.0" prefWidth="472.0" text="Employee Details" textFill="#4db6ac">
+               <font>
+                  <Font name="System Bold Italic" size="57.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

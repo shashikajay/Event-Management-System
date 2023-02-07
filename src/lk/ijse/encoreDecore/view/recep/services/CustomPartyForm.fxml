@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="882.0" prefWidth="1461.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.encoreDecore.controller.recep.services.CustomPartyFormController">
+   <children>
+      <AnchorPane fx:id="pane" layoutY="2.0" prefHeight="882.0" prefWidth="1461.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Label layoutX="59.0" layoutY="56.0" prefHeight="52.0" prefWidth="814.0" text="# Choose An Batch Custom party Theme">
+               <font>
+                  <Font name="System Bold Italic" size="29.0" />
+               </font>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </Label>
+            <Label layoutX="55.0" layoutY="308.0" prefHeight="52.0" prefWidth="814.0" text="#Make Over Services.">
+               <font>
+                  <Font name="System Bold Italic" size="29.0" />
+               </font>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </Label>
+            <Label layoutX="120.0" layoutY="348.0" prefHeight="55.0" prefWidth="1216.0" text="- Depending on what you need, we get you a custom makeover to suit your individual style or give you a style ">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </Label>
+            <Label layoutX="53.0" layoutY="453.0" prefHeight="52.0" prefWidth="814.0" text="#Decorations.">
+               <font>
+                  <Font name="System Bold Italic" size="29.0" />
+               </font>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </Label>
+            <Label layoutX="67.0" layoutY="380.0" prefHeight="55.0" prefWidth="1263.0" text="breakthrough.The whole idea is to help you shine on your birthday party. Even if other people usually get more  ">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </Label>
+            <Label layoutX="67.0" layoutY="415.0" prefHeight="55.0" prefWidth="1234.0" text="attention than you, your birthday is definitely a good reason to have some of that ‘me time’.">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </Label>
+            <Label layoutX="53.0" layoutY="656.0" prefHeight="52.0" prefWidth="814.0" text="# Photography">
+               <font>
+                  <Font name="System Bold Italic" size="29.0" />
+               </font>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </Label>
+            <Label layoutX="118.0" layoutY="700.0" prefHeight="39.0" prefWidth="1216.0" text="- Available flavours">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </Label>
+            <Label layoutX="127.0" layoutY="495.0" prefHeight="55.0" prefWidth="1216.0" text="- Adult birthday party decorations can be quite a challenge to many because often times people are limited by ">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </Label>
+            <Label layoutX="74.0" layoutY="522.0" prefHeight="55.0" prefWidth="1263.0" text="what they remember of kids birthday parties decor – kiddy balloons, cartoon characters, party hats, etc.">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </Label>
+            <Label layoutX="122.0" layoutY="562.0" prefHeight="55.0" prefWidth="1186.0" text="- We align venue styling and party decorations tastefully with your theme. Even when balloon decorations are ">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </Label>
+            <Label layoutX="67.0" layoutY="587.0" prefHeight="55.0" prefWidth="1263.0" text="involved, (e.g. balloon arches, helium balloons, etc.) your guests will not get the impression that they are at a ">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </Label>
+            <Label layoutX="59.0" layoutY="610.0" prefHeight="39.0" prefWidth="1216.0" text="kids birthday party.">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </Label>
+            <Label layoutX="124.0" layoutY="100.0" prefHeight="55.0" prefWidth="1216.0" text="- Anniversary party themes should be fun and reflective of the couple. Most formal anniversary party themes ">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </Label>
+            <Label layoutX="71.0" layoutY="126.0" prefHeight="55.0" prefWidth="1263.0" text="are color-based to ensure that decorations are elegant and cohesive. However, if you’re throwing a casual anniversary ">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </Label>
+            <Label layoutX="71.0" layoutY="152.0" prefHeight="55.0" prefWidth="1234.0" text="party, you can consider more off-the-wall themes like a luau themed anniversary party, a rustic outdoors dinner, ">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </Label>
+            <Label layoutX="71.0" layoutY="177.0" prefHeight="55.0" prefWidth="1234.0" text="or a southwest inspired celebration. You can also build a theme around the couple’s wedding anniversary symbol ">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </Label>
+            <Label layoutX="71.0" layoutY="202.0" prefHeight="55.0" prefWidth="1234.0" text="which is the most popular choice for choosing a wedding anniversary party theme. For instance, the symbol and ">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </Label>
+            <Label layoutX="70.0" layoutY="227.0" prefHeight="55.0" prefWidth="1234.0" text="color for a 50th wedding anniversary party is gold, so most of the decor and theme will likely include gold for this">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </Label>
+            <Label layoutX="67.0" layoutY="250.0" prefHeight="55.0" prefWidth="1234.0" text=" anniversary party. Here are the main wedding anniversary symbols below for reference:">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

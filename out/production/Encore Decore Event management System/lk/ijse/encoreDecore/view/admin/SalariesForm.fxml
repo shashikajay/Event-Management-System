@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="1011.0" prefWidth="1513.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.encoreDecore.controller.admin.SalariesFormController">
+   <children>
+      <AnchorPane prefHeight="1011.0" prefWidth="1513.0">
+         <children>
+            <Label layoutX="65.0" layoutY="54.0" prefHeight="60.0" prefWidth="216.0" text="Search *">
+               <font>
+                  <Font name="System Bold Italic" size="38.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtSearch" layoutX="238.0" layoutY="57.0" prefHeight="45.0" prefWidth="316.0" />
+            <JFXButton buttonType="RAISED" layoutX="1114.0" layoutY="910.0" onAction="#btnDetailsOnAction" prefHeight="60.0" prefWidth="180.0" text="Details">
+               <font>
+                  <Font name="System Bold Italic" size="28.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="1307.0" layoutY="908.0" onAction="#btnAddOnAction" prefHeight="60.0" prefWidth="148.0" text="Add">
+               <font>
+                  <Font name="System Bold Italic" size="28.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="910.0" layoutY="911.0" onAction="#btnRemoveOnAction" prefHeight="57.0" prefWidth="197.0" text="Remove">
+               <font>
+                  <Font name="System Bold Italic" size="28.0" />
+               </font>
+            </JFXButton>
+            <TableView fx:id="tblSalary" layoutX="49.0" layoutY="146.0" onMouseClicked="#selectedRow" prefHeight="745.0" prefWidth="1405.0">
+              <columns>
+                <TableColumn fx:id="colEmployeeId" prefWidth="170.99996948242188" text="Employee Id" />
+                <TableColumn fx:id="colName" prefWidth="313.0000305175781" text="Employee Name" />
+                  <TableColumn fx:id="colNic" prefWidth="187.0" text="NIC" />
+                  <TableColumn fx:id="colAmount" prefWidth="273.0" text="Amount" />
+                  <TableColumn fx:id="colDate" prefWidth="227.0" text="Date" />
+                  <TableColumn fx:id="colMonth" prefWidth="233.0" text="Month" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

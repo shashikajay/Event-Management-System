@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="1011.0" prefWidth="1513.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.encoreDecore.controller.admin.PaymentsFormController">
+   <children>
+      <Label layoutX="61.0" layoutY="51.0" prefHeight="77.0" prefWidth="425.0" text="Brought Items Payments" textFill="#4db6ac">
+         <font>
+            <Font name="System Bold Italic" size="34.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="1310.0" layoutY="403.0" onAction="#btnBuyItemOnAction" prefHeight="31.0" prefWidth="146.0" text="Add">
+         <font>
+            <Font name="System Bold Italic" size="27.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="1311.0" layoutY="344.0" onAction="#btnBroughtItemRemoveOnAction" prefHeight="31.0" prefWidth="146.0" text="Remove">
+         <font>
+            <Font name="System Bold Italic" size="27.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="80.0" layoutY="482.0" prefHeight="77.0" prefWidth="299.0" text="Repair Payments" textFill="#4db6ac">
+         <font>
+            <Font name="System Bold Italic" size="34.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="1307.0" layoutY="882.0" onAction="#btnRepairItemOnAction" prefHeight="31.0" prefWidth="146.0" text="Add">
+         <font>
+            <Font name="System Bold Italic" size="27.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="1308.0" layoutY="823.0" onAction="#btnRepairItemRemoveOnAction" prefHeight="31.0" prefWidth="146.0" text="Remove">
+         <font>
+            <Font name="System Bold Italic" size="27.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="tblBroutght" layoutX="106.0" layoutY="122.0" onMouseClicked="#broughtMouseClick" prefHeight="343.0" prefWidth="1135.0" stylesheets="@../../css/style.css">
+        <columns>
+          <TableColumn fx:id="broughtColId" prefWidth="134.99996948242188" text="Payment Id" />
+          <TableColumn fx:id="broughtColName" prefWidth="412.0" text="Item Name" />
+            <TableColumn fx:id="broughtColQty" prefWidth="267.0" text="Quantity" />
+            <TableColumn fx:id="broughtColCost" prefWidth="320.0" text="Cost" />
+        </columns>
+      </TableView>
+      <TableView fx:id="tblRepair" layoutX="106.0" layoutY="559.0" onMouseClicked="#repairMouseClick" prefHeight="383.0" prefWidth="1135.0" stylesheets="@../../css/style.css">
+         <columns>
+            <TableColumn fx:id="repairColId" prefWidth="134.99996948242188" text="Payment Id" />
+            <TableColumn fx:id="repairColName" prefWidth="412.0" text="Item Name" />
+            <TableColumn fx:id="repaircolqty" prefWidth="267.0" text="Quantity" />
+            <TableColumn fx:id="repairColCost" prefWidth="320.0" text="Cost" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

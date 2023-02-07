@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="489.0" prefWidth="711.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.encoreDecore.controller.admin.SalaryDetailsFormController">
+   <children>
+      <Label layoutX="29.0" layoutY="25.0" prefHeight="50.0" prefWidth="216.0" text="Salary Detials">
+         <font>
+            <Font name="System Bold Italic" size="31.0" />
+         </font>
+      </Label>
+      <JFXTreeTableView layoutX="45.0" layoutY="77.0" prefHeight="329.0" prefWidth="629.0">
+         <columns>
+            <TreeTableColumn prefWidth="193.0" text="Name" />
+            <TreeTableColumn prefWidth="193.0" text="Amount" />
+            <TreeTableColumn prefWidth="242.0" text="Payment has Done / Not" />
+         </columns>
+      </JFXTreeTableView>
+      <JFXButton buttonType="RAISED" layoutX="568.0" layoutY="433.0" onAction="#btnOkOnAction" prefHeight="38.0" prefWidth="106.0" text="OK">
+         <font>
+            <Font name="System Bold Italic" size="19.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

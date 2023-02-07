@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1010.0" prefWidth="1920.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.encoreDecore.controller.recep.RecepsionistDashboardFormController">
+   <children>
+      <AnchorPane fx:id="availabilityPane" layoutX="432.0" prefHeight="1011.0" prefWidth="1488.0">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="1105.0" layoutY="864.0" onAction="#btnPlaceOrderOnAction" prefHeight="65.0" prefWidth="271.0" style="-fx-background-color: #64b5f6; -fx-background-radius: 10px;" text="Place Order" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="37.0" />
+               </font>
+            </JFXButton>
+            <JFXDatePicker fx:id="dateSearch" layoutX="84.0" layoutY="146.0" onAction="#calendarOnAction" prefHeight="55.0" prefWidth="333.0" />
+            <TableView fx:id="tblOrder" layoutX="84.0" layoutY="235.0" prefHeight="580.0" prefWidth="974.0" style="-fx-background-color: ffffff;" styleClass="column-header" stylesheets="@../../css/style.css">
+              <columns>
+                <TableColumn fx:id="colDate" prefWidth="227.0" style="-fx-background-color: ffffff;" text="Date" />
+                <TableColumn fx:id="colName" prefWidth="339.0" style="-fx-background-color: ffffff;" text="Customer Name" />
+                  <TableColumn fx:id="colEvent" prefWidth="458.0" style="-fx-background-color: ffffff;" text="Event" />
+              </columns>
+            </TableView>
+            <Label layoutX="67.0" layoutY="29.0" prefHeight="89.0" prefWidth="510.0" text="Availability" textFill="#26a69a">
+               <font>
+                  <Font name="System Bold" size="61.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <VBox layoutY="-2.0" prefHeight="1012.0" prefWidth="427.0">
+         <children>
+            <AnchorPane prefHeight="240.0" prefWidth="458.0">
+               <children>
+                  <ImageView fitHeight="174.0" fitWidth="281.0" layoutX="83.0" layoutY="44.0">
+                     <image>
+                        <Image url="@../../assets/logo/companyLogo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <JFXButton buttonType="RAISED" onAction="#AvailabilityOnAction" prefHeight="149.0" prefWidth="434.0" styleClass="button_colour_selected" stylesheets="@../../css/RecepsionistForm.css" text="AVAILABILITY">
+               <font>
+                  <Font name="System Bold" size="45.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" onAction="#btnServiceOnAction" prefHeight="148.0" prefWidth="433.0" styleClass="button_colour_selected" stylesheets="@../../css/RecepsionistForm.css" text="SERVICES">
+               <font>
+                  <Font name="System Bold" size="45.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" onAction="#btnOrderOnAction" prefHeight="157.0" prefWidth="469.0" styleClass="button_colour_selected" stylesheets="@../../css/RecepsionistForm.css" text="ORDERS">
+               <font>
+                  <Font name="System Bold" size="45.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" onAction="#btnPaymentOnAction" prefHeight="157.0" prefWidth="469.0" styleClass="button_colour_selected" stylesheets="@../../css/RecepsionistForm.css" text="PAYMENTS">
+               <font>
+                  <Font name="System Bold" size="45.0" />
+               </font>
+            </JFXButton>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <JFXButton layoutX="134.0" layoutY="96.0" onAction="#btnLogOutOnAction" prefHeight="43.0" prefWidth="181.0" style="-fx-background-color: #1565c0; -fx-background-radius: 10px;" text="LOG OUT" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

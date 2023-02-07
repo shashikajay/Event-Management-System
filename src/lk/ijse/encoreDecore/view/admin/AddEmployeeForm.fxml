@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="534.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.encoreDecore.controller.admin.AddEmployeeFormController">
+   <children>
+      <Label layoutX="27.0" layoutY="30.0" prefHeight="59.0" prefWidth="335.0" text="Add Employee">
+         <font>
+            <Font name="System Bold Italic" size="41.0" />
+         </font>
+      </Label>
+      <Label layoutX="43.0" layoutY="100.0" prefHeight="43.0" prefWidth="142.0" text="Employee Id -">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="43.0" layoutY="143.0" prefHeight="43.0" prefWidth="196.0" text="Employee Name* -">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtName" layoutX="246.0" layoutY="131.0" prefHeight="33.0" prefWidth="254.0">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="43.0" layoutY="196.0" prefHeight="43.0" prefWidth="196.0" text="NIC* -">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtNic" layoutX="246.0" layoutY="185.0" prefHeight="33.0" prefWidth="254.0">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="43.0" layoutY="249.0" prefHeight="43.0" prefWidth="196.0" text="Email* -">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtEmail" layoutX="246.0" layoutY="237.0" prefHeight="33.0" prefWidth="254.0">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="43.0" layoutY="302.0" prefHeight="43.0" prefWidth="196.0" text="Contact No* -">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtContact" layoutX="246.0" layoutY="290.0" prefHeight="33.0" prefWidth="254.0">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="43.0" layoutY="357.0" prefHeight="43.0" prefWidth="196.0" text="Job Role* -">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtRole" layoutX="246.0" layoutY="345.0" prefHeight="33.0" prefWidth="254.0">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="43.0" layoutY="412.0" prefHeight="43.0" prefWidth="196.0" text="Salary* -">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtSalary" layoutX="246.0" layoutY="400.0" prefHeight="33.0" prefWidth="254.0">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton layoutX="450.0" layoutY="464.0" onAction="#btnAddOnAction" prefHeight="43.0" prefWidth="110.0" style="-fx-background-color: #00c853;" text="ADD" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="lblId" layoutX="195.0" layoutY="100.0" prefHeight="43.0" prefWidth="142.0" text=" ">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

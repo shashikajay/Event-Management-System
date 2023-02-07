@@ -1,0 +1,11 @@
+.weddingButton{
+    animation-play-state: paused;
+}
+
+.weddingButton{
+    animation-play-state: running;
+}
+
+.text_size{
+    -fx-font-size: 30;
+}
