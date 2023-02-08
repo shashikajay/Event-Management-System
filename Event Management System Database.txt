@@ -1,0 +1,169 @@
+create table client
+(
+    CId     varchar(10)             not null
+        primary key,
+    name    varchar(45)             null,
+    address varchar(45)             null,
+    nic     varchar(15)             null,
+    contact varchar(10)             null,
+    email   varchar(20)             null,
+    gender  enum ('male', 'female') null,
+    age     int                     null
+);
+
+create table employee
+(
+    name    varchar(20) null,
+    EId     varchar(20) not null
+        primary key,
+    nic     varchar(15) null,
+    contact varchar(10) null,
+    role    varchar(45) null,
+    email   varchar(20) null,
+    salary  double      null
+);
+
+create table item_payments
+(
+    PId  varchar(10)   null,
+    name varchar(45)   null,
+    qty  int           null,
+    cost double(10, 2) null
+);
+
+create table package
+(
+    PId  varchar(45) not null
+        primary key,
+    type varchar(45) null
+);
+
+create table offer
+(
+    PId         varchar(10) null,
+    OfId        varchar(10) not null
+        primary key,
+    percentage  varchar(10) null,
+    description json        null,
+    start       date        null,
+    end         date        null,
+    constraint offer_ibfk_1
+        foreign key (PId) references package (PId)
+);
+
+create index PId
+    on offer (PId);
+
+create table orders
+(
+    OId           varchar(10)   not null
+        primary key,
+    CId           varchar(10)   null,
+    PId           varchar(10)   null,
+    today         date          null,
+    required_date date          null,
+    total         double(10, 2) null,
+    constraint orders_ibfk_1
+        foreign key (CId) references client (CId),
+    constraint orders_ibfk_2
+        foreign key (PId) references package (PId),
+    constraint orders_ibfk_3
+        foreign key (CId) references client (CId)
+            on update cascade on delete cascade,
+    constraint orders_ibfk_4
+        foreign key (PId) references package (PId)
+            on update cascade on delete cascade
+);
+
+create table order_details
+(
+    OId   varchar(10)    not null,
+    name  varchar(45)    not null,
+    type  varchar(30)    null,
+    price decimal(10, 2) null,
+    primary key (OId, name),
+    constraint order_details_ibfk_1
+        foreign key (OId) references orders (OId),
+    constraint order_details_ibfk_2
+        foreign key (OId) references orders (OId)
+            on update cascade on delete cascade,
+    constraint order_details_ibfk_3
+        foreign key (OId) references orders (OId)
+            on update cascade on delete cascade
+);
+
+create index CId
+    on orders (CId);
+
+create index PId
+    on orders (PId);
+
+create table payment
+(
+    OId              varchar(10) null,
+    invoice          varchar(10) not null
+        primary key,
+    date             date        null,
+    amount           double      null,
+    remaining_amount double      null,
+    constraint payment_ibfk_1
+        foreign key (OId) references orders (OId)
+);
+
+create index OId
+    on payment (OId);
+
+create table salary
+(
+    EId    varchar(20)   not null,
+    amount double(10, 2) null,
+    date   date          not null,
+    month  varchar(15)   null,
+    primary key (EId, date),
+    constraint salary_ibfk_1
+        foreign key (EId) references employee (EId)
+);
+
+create table service
+(
+    SId         varchar(10) not null
+        primary key,
+    name        varchar(45) null,
+    description json        null,
+    price       double      null
+);
+
+create table user
+(
+    name      varchar(20) not null
+        primary key,
+    password  varchar(20) null,
+    role      varchar(20) null,
+    full_name varchar(45) null
+);
+
+create table wedding_services
+(
+    SId  varchar(10) not null,
+    name varchar(20) not null,
+    primary key (SId, name)
+);
+
+create table wedding_service_details
+(
+    SId    varchar(10)    not null,
+    name   varchar(45)    not null,
+    budget decimal(10, 2) null,
+    semi   decimal(10, 2) null,
+    luxury decimal(10, 2) null,
+    primary key (SId, name),
+    constraint fk_name
+        foreign key (SId) references wedding_services (SId)
+            on update cascade on delete cascade,
+    constraint wedding_service_details_ibfk_1
+        foreign key (SId) references wedding_services (SId)
+);
+
+create index name
+    on wedding_services (name);
+
