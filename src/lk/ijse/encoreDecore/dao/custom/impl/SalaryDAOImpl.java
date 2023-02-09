@@ -1,8 +1,11 @@
 package lk.ijse.encoreDecore.dao.custom.impl;
 
+import lk.ijse.encoreDecore.dao.SQLUtil;
 import lk.ijse.encoreDecore.dao.custom.SalaryDAO;
+import lk.ijse.encoreDecore.entity.Customer;
 import lk.ijse.encoreDecore.entity.Salary;
 
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
